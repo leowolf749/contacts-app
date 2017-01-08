@@ -9,6 +9,11 @@
     <!-- add js file -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
     <script src="app.js"></script>
+
+    <script id="food-template" type="x-mustache-template">
+        <p>{{ foodName }}</p>
+    </script>
+
 </head>
     
 <body>
@@ -21,12 +26,6 @@
     
     <div class="view" id="show-food">
         <ul>
-            <li>Potatoes</li>
-            <li>Steak Tar Tar</li>
-            <li>Pickled Herring</li>
-            <li>Canned Enchiladas</li>
-            <li>Tube Steak</li>
-            <li>Broccoli</li>
         </ul>
     </div>
 

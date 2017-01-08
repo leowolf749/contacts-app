@@ -1325,9 +1325,6 @@ h1 {
   .view:last-child:not(:first-child) {
     float: right; }
 
-#show-food {
-  display: none; }
-
 #show-food ul {
   text-align: center;
   list-style-type: none;

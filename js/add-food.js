@@ -1,11 +1,3 @@
-window.addEventListener('load', function() {
-    for (let i = 0; i < food.length; i++) {
-        showFood(food[i]);
-    };
-
-    addFood(food);
-});
-
 let food = [
     {
         foodName: "Potatoes",
@@ -30,18 +22,6 @@ function showFood(food) {
     let template = document.querySelector('#food-template');
 
     child.innerHTML = Mustache.render(template.innerHTML, {
-        foodName: food.foodName,
-    });
-
-    parent.appendChild(child);
-}
-
-function addFood(food) {
-    let input = document.querySelector('#add-food-item');
-    
-    let addButton = document.querySelector('#submit');
-    addButton.addEventListener('click', function() {
-        console.log('hi');
-
+        foodName: food.name,
     });
 }
