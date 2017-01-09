@@ -1,5 +1,23 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 window.addEventListener('load', function() {
+    let nav_list = document.querySelector('#show-list');
+    let nav_add = document.querySelector('#show-add');
+
+    let list_view = document.querySelector('#show-food');
+    let add_view = document.querySelector('#add-food');
+
+    let search = document.querySelector('#search');
+
+    nav_list.addEventListener('click', function () {
+        list_view.classList.remove('hidden');
+        add_view.classList.add('hidden');
+    });
+
+    nav_add.addEventListener('click', function () {
+        list_view.classList.add('hidden');
+        add_view.classList.remove('hidden');
+    });
+
     showFood(food);
 });
 
@@ -38,17 +56,22 @@ module.exports = [
     {
         foodName: "Cheeseburger",
         description: "1/2lb beef patty w/ cheddar cheese, lettuce, tomato, and onion on a sesame seed bun",
-        price: "$8.59",
+        price: "$" + 8.59,
     },
     {
         foodName: "Smoked Wings",
         description: "10 smoked chicken wings tossed in your choice of wing sauce",
-        price: "$9.59",
+        price: "$" + 9.59,
     },
     {
         foodName: "BLT",
         description: "Bacon, lettuce, tomato, mayonaise on your choice of bread",
-        price: "$5.59",
+        price: "$" + 5.59,
+    },
+    {
+        foodName: "Pizza",
+        description: "Piiizzzzaaaaaa",
+        price: "$" + 9.99,
     }
 ];
 },{}]},{},[1]);

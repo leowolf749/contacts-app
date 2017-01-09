@@ -41,7 +41,7 @@ nav {
 
 
 /* Views */
-.view {
+div {
     @include grid-column(12);
     background-color: white;
     height: 400px;

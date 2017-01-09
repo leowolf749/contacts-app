@@ -1311,7 +1311,7 @@ nav {
     color: floralwhite; }
 
 /* Views */
-.view {
+div {
   width: 100%;
   float: left;
   padding-right: 0.625rem;
@@ -1321,10 +1321,10 @@ nav {
   border: 1px solid black;
   overflow-y: scroll; }
   @media print, screen and (min-width: 40em) {
-    .view {
+    div {
       padding-right: 0.9375rem;
       padding-left: 0.9375rem; } }
-  .view:last-child:not(:first-child) {
+  div:last-child:not(:first-child) {
     float: right; }
 
 #show-food ul {

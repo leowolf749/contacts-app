@@ -21,17 +21,17 @@
 <body>
     <h1>MENU</h1>
     <nav>
-        <h2><a href="#">Food Items</a></h2>
-        <h2><a href="#">Add A Food Item</a></h2>
+        <h2><a id="show-list" href="#">Food Items</a></h2>
+        <h2><a id="show-add" href="#">Add A Food Item</a></h2>
     </nav>
 
     
-    <div class="view" id="show-food">
+    <div id="show-food">
         <input type="text" id="search" placeholder="search menu">
         <ul></ul>
     </div>
 
-    <div class="view hidden" id="add-food">
+    <div class="hidden" id="add-food">
         <input type="text" id="add-food-item" placeholder="food item">
         <button id="submit">add</button>
     </div>
