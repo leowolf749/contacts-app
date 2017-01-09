@@ -8,19 +8,9 @@ window.addEventListener('load', function() {
 
 let food = [
     {
-        foodName: "Potatoes",
-    },
-        {
-        foodName: "Steak Tar Tar",
-    },
-        {
-        foodName: "Pickled Herring",
-    },
-        {
-        foodName: "Canned Enchiladas",
-    },
-        {
-        foodName: "Broccoli",
+        foodName: "Cheeseburger",
+        description: "1/2lb beef patty w/ cheddar cheese, lettuce, tomato, and onion on a sesame seed bun",
+        price: "$8.59",
     },
 ];
 
@@ -31,6 +21,8 @@ function showFood(food) {
 
     child.innerHTML = Mustache.render(template.innerHTML, {
         foodName: food.foodName,
+        description: food.description,
+        price: food.price,
     });
 
     parent.appendChild(child);

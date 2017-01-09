@@ -1317,7 +1317,8 @@ h1 {
   padding-right: 0.625rem;
   padding-left: 0.625rem;
   background-color: white;
-  height: 300px; }
+  height: 300px;
+  border: 1px solid black; }
   @media print, screen and (min-width: 40em) {
     .view {
       padding-right: 0.9375rem;
@@ -1331,6 +1332,8 @@ h1 {
   margin-top: 50px;
   color: indianred;
   padding: 0px; }
+  #show-food ul .descrip {
+    font-size: .7em; }
 
 /* Add food item */
 #submit {
