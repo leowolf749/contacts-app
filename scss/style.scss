@@ -19,7 +19,7 @@ h1 {
 }
 
 /* Nav bar with links to different displays */
-.nav-bar {
+nav {
     @include grid-column(5);
     @include grid-row();
     background-color: floralwhite;

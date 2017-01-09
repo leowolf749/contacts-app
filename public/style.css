@@ -1272,7 +1272,7 @@ h1 {
   border: 2px dotted black; }
 
 /* Nav bar with links to different displays */
-.nav-bar {
+nav {
   width: 41.66667%;
   float: left;
   padding-right: 0.625rem;
@@ -1282,31 +1282,31 @@ h1 {
   margin-left: auto;
   background-color: floralwhite; }
   @media print, screen and (min-width: 40em) {
-    .nav-bar {
+    nav {
       padding-right: 0.9375rem;
       padding-left: 0.9375rem; } }
-  .nav-bar:last-child:not(:first-child) {
+  nav:last-child:not(:first-child) {
     float: right; }
-  .nav-bar::before, .nav-bar::after {
+  nav::before, nav::after {
     display: table;
     content: ' '; }
-  .nav-bar::after {
+  nav::after {
     clear: both; }
-  .nav-bar h2 {
+  nav h2 {
     width: 50%;
     float: left;
     padding-right: 0.625rem;
     padding-left: 0.625rem; }
     @media print, screen and (min-width: 40em) {
-      .nav-bar h2 {
+      nav h2 {
         padding-right: 0.9375rem;
         padding-left: 0.9375rem; } }
-    .nav-bar h2:last-child:not(:first-child) {
+    nav h2:last-child:not(:first-child) {
       float: right; }
-  .nav-bar a {
+  nav a {
     color: indianred;
     text-decoration: none; }
-  .nav-bar a:hover {
+  nav a:hover {
     background-color: indianred;
     color: floralwhite; }
 
