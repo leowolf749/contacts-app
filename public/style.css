@@ -1317,8 +1317,9 @@ h1 {
   padding-right: 0.625rem;
   padding-left: 0.625rem;
   background-color: white;
-  height: 300px;
-  border: 1px solid black; }
+  height: 400px;
+  border: 1px solid black;
+  overflow-y: scroll; }
   @media print, screen and (min-width: 40em) {
     .view {
       padding-right: 0.9375rem;
@@ -1332,8 +1333,13 @@ h1 {
   margin-top: 50px;
   color: indianred;
   padding: 0px; }
+  #show-food ul li {
+    border-bottom: 1px dotted black; }
   #show-food ul .descrip {
     font-size: .7em; }
+
+.hidden {
+  display: none; }
 
 /* Add food item */
 #submit {
@@ -1345,5 +1351,7 @@ h1 {
 
 input {
   border-radius: 5px;
-  background-color: lightgrey;
-  margin-top: 30px; }
+  background-color: lightgray;
+  margin-top: 30px;
+  margin-left: 500px;
+  text-align: center; }
