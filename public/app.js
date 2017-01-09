@@ -18,10 +18,23 @@ window.addEventListener('load', function() {
         add_view.classList.remove('hidden');
     });
 
-    showFood(food);
+    search.addEventListener('keyup', function () {
+        let keepers = [];
+
+        for (let i = 0; i < foodList.length; i++) {
+            let food_name = foodList[i].foodName.toLowerCase();
+            let search_term = search.value.toLowerCase();
+            if (food_name.includes(search_term)) {
+                keepers.push(foodList[i]);
+            }
+        }
+        showFood(keepers);
+    });
+
+    showFood(foodList);
 });
 
-let food = require('./foods');
+let foodList = require('./foods');
 
 function showFood(food) {
     let parent = document.querySelector('#show-food ul');
